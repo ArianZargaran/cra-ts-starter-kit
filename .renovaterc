@@ -1,4 +1,5 @@
 {
   "schedule": "after 5am every day",
+  "automerge": true,
   "ignorePaths": ["**/node_modules/**"]
 }
