@@ -1,8 +1,14 @@
 # CRA TS Starter Kit
 
-## Tools Stack
+##### Tools Stack: React, TypeScript, EsLint, Jest
 
-- React, TypeScript, EsLint, Jest
+## How to use:
+
+**Installation** `$ yarn`
+
+**Launch Locally** `$ yarn start`
+
+**Deployed Version** Visit ``.
 
 ## File Structure
 
