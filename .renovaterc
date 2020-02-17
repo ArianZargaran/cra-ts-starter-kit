@@ -1,4 +1,4 @@
 {
-  "schedule": "before 5am every day",
+  "schedule": "after 5am every day",
   "ignorePaths": ["**/node_modules/**"]
 }
