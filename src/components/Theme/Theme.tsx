@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import { ThemeContext } from 'theme/context';
 import { ThemeEnum } from 'theme/ThemeEnum';
 import { toggleTheme } from 'theme/action-creators';
-import { themeToSwitchTo } from 'helpers/themeToSwitchTo';
+import { themeToSwitchTo } from 'utils/themeToSwitchTo';
 
 import dark from 'styles/theme/dark/root.module.css';
 import light from 'styles/theme/light/root.module.css';
