@@ -7,12 +7,20 @@ _Stack: React, Redux, TypeScript, EsLint, Prettier, Jest_
 <u>Installation</u>
 
 ```sh
+# via npm
+$ npm install
+
+# via yarn
 $ yarn
 ```
 
 <u>Launch App Locally</u>
 
-```
+```sh
+# via npm
+$ npm start
+
+# via yarn
 $ yarn start
 ```
 

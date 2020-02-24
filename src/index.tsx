@@ -1,19 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-import { Provider } from "react-redux";
-import { store } from "state/store";
+import * as serviceWorker from './serviceWorker';
+import { Provider as GlobalStateProvider } from 'react-redux';
+import { store } from 'state/store';
 
 import './styles/reset.css';
+import './styles/index.css';
 
-import * as serviceWorker from './serviceWorker';
+import { bootstrapActions } from 'state/bootstrapActions';
+import { ThemeProvider } from './theme/provider';
 
-// bootstrapActions(store);
+bootstrapActions(store);
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <GlobalStateProvider store={store}>
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  </GlobalStateProvider>,
 document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

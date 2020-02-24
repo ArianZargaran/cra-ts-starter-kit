@@ -1,0 +1,22 @@
+/* TODO: Update prefix */
+.wtf-app {
+  height: 100vh;
+}
+
+/* TODO: Come up with a better class naming */
+.wtf-theme_switch-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+
+.wtf-theme_switch-wrapper .wtf-theme_switch-button {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.wtf-theme_switch-wrapper:hover .wtf-theme_switch-button {
+  opacity: 1;
+  cursor: pointer;
+}
