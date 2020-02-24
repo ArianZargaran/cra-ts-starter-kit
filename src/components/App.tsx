@@ -1,14 +1,16 @@
 import React from 'react';
+import { Theme } from 'components/Theme/Theme';
 
-function App() {
+export const App = () => {
+
   return (
-    <div className="App">
+    <Theme>
       <header className="App-header">
         <p>
           Hello World!
         </p>
       </header>
-    </div>
+    </Theme>
   );
 }
 

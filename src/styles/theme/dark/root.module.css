@@ -1,0 +1,9 @@
+.root {
+  background-color: black;
+  color: white;
+}
+
+.root * {
+  background-color: black;
+  color: white;
+}
