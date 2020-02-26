@@ -1,8 +1,10 @@
-import { createStore, StoreEnhancer, Store } from 'redux';
-import { reducers } from 'state/reducers';
+import { createStore, StoreEnhancer, Store } from "redux";
+import { reducers } from "state/reducers";
 
 declare global {
-  interface Window { __REDUX_DEVTOOLS_EXTENSION__: () => StoreEnhancer }
+  interface Window {
+    __REDUX_DEVTOOLS_EXTENSION__: () => StoreEnhancer;
+  }
 }
 
 export const store: Store = createStore(

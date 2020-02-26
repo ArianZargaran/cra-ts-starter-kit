@@ -12,4 +12,4 @@ export const themeReducer: React.Reducer<ThemeEnum, ThemeActionTypes> = (
     default:
       return theme;
   }
-}
+};

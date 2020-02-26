@@ -2,79 +2,78 @@
 
 ### Settings
 
-Main goal of these settings is to be able to detect and apply my understanding of good Front-End practices. For this commitment, I use the following tools:
+Main goal of these settings is to be able to detect and apply my understanding of good Front-End practices. For this commitment, I use the following tools/extensions:
 
-- ESLint, to lint and fix Javascript/Typescript files.
-- Prettier (\*), to format code alongside Lint tools.
+**Required Extensions**
 
-## Editor Rules
+- ESLint. Lint and fix Javascript/Typescript files. Please visit the following link for more info, https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+
+- Prettier. Format code alongside Lint tools. Please visit the following link for more info, https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+- EditorConfig. Specific cross-team Editor settings. Please visit the following link for more info, https://editorconfig.org/#overview
+
+  **Recommended Extensions**
+  My personal and preferred VS Code extensions:
+
+- Android iOS Emulator. Launch an Android or iOS Viertual Device emulator.
+- Bracket Pair Colorizer 2. Adds some cool and nice colors to brackets for a better readability.
+- GitLens. Expose a phantom text to track Git per line on your codebase.
+- Live Share. Crutial for peer-programming sesions while coding.
+- stylelint. Modern CSS/SCSS/Less linter.
+- SVG Previewer. Shows SVG preview to the side panel.
+- Version Lens. Checks whether you are out of date on your dependencies maintenance.
+- vscode-icons. Icons for your Visual Studio Code.
+
+## Editor Settings
 
 ```
-{
-  "editor.rulers": [
-    100
-  ],
+settings: {
+  "bracket-pair-colorizer-2.colorMode": "Independent",
+  "bracket-pair-colorizer-2.colors": ["LightSkyBlue", "Orchid", "Gold"],
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.rulers": [100],
   "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
   "editor.renderIndentGuides": true,
   "editor.scrollBeyondLastLine": false,
   "editor.smoothScrolling": true,
-  "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true,
-  "workbench.iconTheme": "vscode-icons",
-  "bracket-pair-colorizer-2.colorMode": "Independent",
-  "bracket-pair-colorizer-2.colors": [
-    "LightSkyBlue",
-    "Orchid",
-    "Gold"
-  ],
-  "versionlens.showVersionLensesAtStartup": false,
-  "sync.gist": "",
-  "sync.autoDownload": false,
-  "sync.autoUpload": false,
-  "terminal.integrated.shell.osx": "/bin/zsh",
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "window.zoomLevel": 2,
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "files.trimFinalNewlines": true,
-  "sync.forceUpload": false,
-  // Common configs
   "editor.tabSize": 2,
-  "javascript.validate.enable": false, // ESlint validates the code
-  "scss.validate": false, // Lets Stylelint validate our code
-  // "prettier.disableLanguages": [ // Lint tool formats and fixes the code.
-  //  "javascript",
-  //  "javascriptreact",
-  //  "typescript",
-  //  "typescriptreact"
-  // ], // In case I defer this job to eslint
-  "editor.codeActionsOnSave": { // To autofix on save
+  "editor.codeActionsOnSave": {
+    // To autofix on save
     "source.fixAll": true
   },
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact",
+    "typescriptreact"
   ],
-  // disable default autoformat in favor of the eslint config one
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "git.autofetch": false,
+  "git.confirmSync": false,
+  "gitlens.gitCommands.closeOnFocusOut": true,
+  "javascript.validate.enable": false, // Lets ESlint validate our code
+  "prettier.disableLanguages": [],
+  // Optional: I use Oh-My ZSH!
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "versionlens.showVersionLensesAtStartup": false,
+  "window.zoomLevel": 2,
+  "workbench.iconTheme": "vscode-icons",
   "[javascript]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "[typescriptreact]": {
-    "editor.formatOnSave": false
-  },
-  "jest.enableInlineErrorMessages": false,
-  "editor.formatOnSave": true,
-  "gitlens.gitCommands.closeOnFocusOut": true,
-  "diffEditor.ignoreTrimWhitespace": false,
-  // End common configs
+    "editor.formatOnSave": true
+  }
 }
 
 ```
