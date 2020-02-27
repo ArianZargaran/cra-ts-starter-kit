@@ -1,9 +1,62 @@
 .root {
-  background-color: black;
-  color: white;
-}
+  /* FONTS */
+  /* - families */
+  --font-family-heading: "Avenir LT Std 85 Heavy", "Avenir Next", "Segoe UI",
+    sans-serif;
+  --font-family-body: "Avenir LT Std 45 Book", "Avenir Next", "Segoe UI",
+    sans-serif;
 
-.root * {
-  background-color: black;
-  color: white;
+  /* - weights */
+  --font-weight-medium: 400;
+  --font-weight-hard: 700;
+  --font-weight-bold: 900;
+
+  /* - line-heights */
+  --font-line-height-heading: 1.25;
+  --font-line-height-body: 1.625;
+
+  /* - sizes */
+  --font-size-xxs: 12px;
+  --font-size-xs: 14px;
+  --font-size-s: 16px;
+  --font-size-m: 20px;
+  --font-size-l: 24px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 48px;
+
+  /* - colors */
+  --font-color-heading: #c45d5e;
+  --font-color-body: #cfd4d7;
+  --font-color-button-primary: #414950;
+
+  /* SPACING */
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-s: 12px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+
+  /* BACKGROUNDS */
+  /* - colors */
+  --bg-color-body: #414950;
+  --bg-color-button-primary: #c6cacf;
+
+  /* - images */
+  /* --bg-image-body: url("./images/background.png"); */
+
+  /* BORDERS */
+  /* - radius */
+  --border-radius-input-field-primary: 4px;
+  --border-radius-button-primary: 4px;
+  --border-radius-button-secondary: 4px;
+
+  /* - combos */
+  --border-input-button-primary: 1px solid #c6cacf;
+  --border-input-field-primary: 1px solid #838c93;
+  --border-input-field-secondary: 2px solid #838c93;
+
+  /* ELEMENTS */
+  --element-separator: 1px solid rgba(65, 73, 80, 0.16);
 }

@@ -8,12 +8,16 @@
   position: absolute;
   top: 0;
   right: 0;
-  padding: 5px;
+  padding: var(--spacing-xs, 8px);
 }
 
 .wtf-theme_switch-wrapper .wtf-theme_switch-button {
   opacity: 0;
   transition: 0.3s;
+  background: var(--bg-color-button-primary);
+  color: var(--font-color-button-primary);
+  border: var(--border-input-button-primary, 1px solid transparent);
+  border-radius: var(--border-radius-button-primary);
 }
 
 .wtf-theme_switch-wrapper:hover .wtf-theme_switch-button {

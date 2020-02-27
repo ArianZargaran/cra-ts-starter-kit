@@ -26,7 +26,9 @@ Main goal of these settings is to be able to detect and apply my understanding o
 
 ## Editor Settings
 
-```
+You can find these config settings under: `config/editor/*.code-workspace`
+
+```.json
 settings: {
   "bracket-pair-colorizer-2.colorMode": "Independent",
   "bracket-pair-colorizer-2.colors": ["LightSkyBlue", "Orchid", "Gold"],
