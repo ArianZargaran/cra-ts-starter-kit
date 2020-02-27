@@ -1,3 +1,4 @@
+/* Done to ensure our App component behaves like <body/> */
 html,
 body,
 #root {

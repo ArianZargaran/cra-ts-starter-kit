@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App";
-import * as serviceWorker from "./serviceWorker";
+import App from "components/App/App";
+import * as serviceWorker from "serviceWorker";
 import { Provider as GlobalStateProvider } from "react-redux";
 import { store } from "state/store";
 
-import "./styles/reset.css";
-import "./styles/index.css";
+import "styles/reset.css";
+import "styles/index.css";
 
 import { bootstrapActions } from "state/bootstrapActions";
-import { ThemeProvider } from "./theme/provider";
+import { ThemeProvider } from "theme/provider";
 
 bootstrapActions(store);
 

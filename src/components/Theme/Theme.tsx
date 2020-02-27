@@ -1,9 +1,10 @@
-import React, { useContext, ReactNode } from "react";
+import React, { useContext, ReactNode, useEffect } from "react";
 import classnames from "classnames";
 import { ThemeContext } from "theme/context";
 import { ThemeEnum } from "theme/ThemeEnum";
-import { toggleTheme } from "theme/action-creators";
+import { toggleTheme, setDarkTheme } from "theme/action-creators";
 import { themeToSwitchTo } from "utils/themeToSwitchTo";
+import { isDarkMode } from "utils/isDarkMode";
 
 import dark from "styles/theme/dark/root.module.css";
 import light from "styles/theme/light/root.module.css";
@@ -16,13 +17,19 @@ interface ThemePropTypes {
 export const Theme = ({ children }: ThemePropTypes) => {
   const { theme, dispatch } = useContext(ThemeContext);
 
+  useEffect(() => {
+    if (isDarkMode()) {
+      dispatch(setDarkTheme());
+    }
+  }, [dispatch]);
+
   const handleClick = () => {
     dispatch(toggleTheme());
   };
 
   return (
-    <section
-      className={classnames("wtf-app", {
+    <div
+      className={classnames({
         [light.root]: theme === ThemeEnum.light,
         [dark.root]: theme === ThemeEnum.dark
       })}
@@ -33,6 +40,6 @@ export const Theme = ({ children }: ThemePropTypes) => {
         </button>
       </div>
       {children}
-    </section>
+    </div>
   );
 };
