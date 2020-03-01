@@ -1,5 +1,5 @@
 import React from "react";
-import { Theme } from "components/Theme/Theme";
+import { Theme } from "theme/component/Theme";
 
 import "./app.css";
 

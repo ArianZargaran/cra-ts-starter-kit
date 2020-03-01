@@ -1,8 +1,8 @@
 import React, { useContext, ReactNode, useEffect } from "react";
 import classnames from "classnames";
-import { ThemeContext } from "theme/context";
-import { ThemeEnum } from "theme/ThemeEnum";
-import { toggleTheme, setDarkTheme } from "theme/action-creators";
+import { ThemeContext } from "theme/state/context";
+import { ThemeEnum } from "enums/ThemeEnum";
+import { toggleTheme, setDarkTheme } from "theme/state/action-creators";
 import { themeToSwitchTo } from "utils/themeToSwitchTo";
 import { isDarkMode } from "utils/isDarkMode";
 

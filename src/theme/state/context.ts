@@ -1,6 +1,6 @@
 import React, { Dispatch } from "react";
-import { ThemeEnum } from "theme/ThemeEnum";
-import { ThemeActionTypes } from "theme/action-creators";
+import { ThemeEnum } from "enums/ThemeEnum";
+import { ThemeActionTypes } from "theme/state/action-creators";
 
 interface ThemeContextTypes {
   theme: ThemeEnum;

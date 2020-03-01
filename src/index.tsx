@@ -9,7 +9,7 @@ import "styles/reset.css";
 import "styles/index.css";
 
 import { bootstrapActions } from "state/bootstrapActions";
-import { ThemeProvider } from "theme/provider";
+import { ThemeProvider } from "theme/state/provider";
 
 bootstrapActions(store);
 

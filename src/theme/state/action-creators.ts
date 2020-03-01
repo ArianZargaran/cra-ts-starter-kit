@@ -1,4 +1,4 @@
-import { ThemeEnum } from "./ThemeEnum";
+import { ThemeEnum } from "enums/ThemeEnum";
 
 export enum THEME_ACTIONS_TYPES {
   TOGGLE_THEME = "TOGGLE_THEME",
