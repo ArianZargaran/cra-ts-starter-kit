@@ -1,4 +1,4 @@
-import { ThemeEnum } from "theme/ThemeEnum";
+import { ThemeEnum } from "enums/ThemeEnum";
 import { themeToSwitchTo } from "../themeToSwitchTo";
 
 describe("themeToSwitchTo", () => {
