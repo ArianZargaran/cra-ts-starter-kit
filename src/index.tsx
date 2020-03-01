@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "components/App/App";
+import { App } from "components/App/App";
 import * as serviceWorker from "serviceWorker";
 import { Provider as GlobalStateProvider } from "react-redux";
 import { store } from "state/store";

@@ -1,1 +1,1 @@
-import "@testing-library/jest-dom/extend-expect";
+import "../config/enzyme/setup";

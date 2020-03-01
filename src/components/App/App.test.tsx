@@ -1,9 +1,11 @@
 import React from "react";
-import { render } from "@testing-library/react";
-import App from "./App";
+import { shallow } from "enzyme";
+import { App } from "components/App/App";
 
-test("renders learn react link", () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("App", () => {
+  const component = shallow(<App />);
+
+  it("should render Theme wrapper", () => {
+    expect(component.find("Theme").length).toBe(1);
+  });
 });

@@ -3,7 +3,7 @@ import { Theme } from "components/Theme/Theme";
 
 import "./app.css";
 
-export const App = () => {
+const App = () => {
   return (
     <Theme>
       <div className="wtf-app">
@@ -15,4 +15,4 @@ export const App = () => {
   );
 };
 
-export default App;
+export { App };

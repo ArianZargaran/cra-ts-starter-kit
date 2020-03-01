@@ -1,6 +1,6 @@
 # CRA TS Starter Kit
 
-_Stack: React, Redux, TypeScript, EsLint, Prettier, Jest_
+_Stack: React, Redux, Firebase TypeScript, EsLint, Prettier, Jest, Enzyme_
 
 ## How to use:
 
@@ -60,6 +60,22 @@ Visit ``.
 ### Layout
 
 <u>Import</u>:
+
+### Tests
+
+**Unit Tests:** _Jest & Enzyme_
+
+**Coverage:** _Coverall_
+
+**Functional Tests:** _Cypress & Cucumber_
+
+**Visual Tests:** _Storybook & Loki_
+
+## Continuous Integration & Continuous Delivery
+
+## Back-End Solution
+
+_Firebase_
 
 ## Config
 
