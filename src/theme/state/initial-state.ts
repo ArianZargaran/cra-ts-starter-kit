@@ -1,3 +1,3 @@
 import { ThemeEnum } from "enums/ThemeEnum";
 
-export const themeInitialState: ThemeEnum = ThemeEnum.light;
+export const themeInitialState: ThemeEnum = ThemeEnum.LIGHT;

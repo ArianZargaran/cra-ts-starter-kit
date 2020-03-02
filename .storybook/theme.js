@@ -1,9 +1,8 @@
 import { create } from "@storybook/theming/create";
 import { isDarkMode } from "../src/utils/isDarkMode";
-import { ThemeEnum } from "../src/enums/ThemeEnum";
 
 export default create({
-  base: isDarkMode() ? ThemeEnum.dark : ThemeEnum.light,
+  base: isDarkMode() ? "dark" : "light",
   brandTitle: "wtf Storybook",
   brandUrl: "wtf-repo-url",
   brandImage:

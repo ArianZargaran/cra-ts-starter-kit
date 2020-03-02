@@ -10,10 +10,10 @@ function loadStories() {
   const requireContext = require.context(
     "../src/components",
     true,
-    /.stories.tsx$/
+    /.story.tsx$/
   );
 
-  requireContext.keys().forEach((filename: string) => {
+  requireContext.keys().forEach((filename) => {
     requireContext(filename);
   });
 }

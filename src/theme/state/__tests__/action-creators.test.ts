@@ -1,19 +1,8 @@
-// import { ThemeEnum } from "./ThemeEnum";
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import React from "react";
 
-// export enum THEME_ACTIONS_TYPES {
-//   TOGGLE_THEME = "TOGGLE_THEME",
-//   SET_DARK_THEME = "SET_DARK_THEME"
-// }
-
-// export interface ThemeActionTypes {
-//   type: THEME_ACTIONS_TYPES;
-//   payload?: ThemeEnum;
-// }
-
-// export const toggleTheme = (): ThemeActionTypes => ({
-//   type: THEME_ACTIONS_TYPES.TOGGLE_THEME
-// });
-
-// export const setDarkTheme = (): ThemeActionTypes => ({
-//   type: THEME_ACTIONS_TYPES.SET_DARK_THEME
-// });
+describe("action-creators", () => {
+  it("should be true", () => {
+    expect(true).toBe(true);
+  });
+})

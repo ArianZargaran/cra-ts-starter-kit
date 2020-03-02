@@ -8,9 +8,9 @@ export const themeReducer: React.Reducer<ThemeEnum, ThemeActionTypes> = (
 ) => {
   switch (action.type) {
     case THEME_ACTIONS_TYPES.TOGGLE_THEME:
-      return theme === ThemeEnum.light ? ThemeEnum.dark : ThemeEnum.light;
+      return theme === ThemeEnum.LIGHT ? ThemeEnum.DARK : ThemeEnum.LIGHT;
     case THEME_ACTIONS_TYPES.SET_DARK_THEME:
-      return ThemeEnum.dark;
+      return ThemeEnum.DARK;
     default:
       return theme;
   }
