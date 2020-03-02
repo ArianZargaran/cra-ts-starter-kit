@@ -1,5 +1,5 @@
 import { create } from "@storybook/theming/create";
-import { isDarkMode } from "../src/utils/isDarkMode";
+import { isDarkMode } from "../src/theme/utils/isDarkMode";
 
 export default create({
   base: isDarkMode() ? "dark" : "light",
