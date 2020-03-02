@@ -20,6 +20,13 @@ module.exports = ({ config }) => {
       },
     ]
   });
+
+  config.module.rules.push({
+    test: /\.scss$/,
+    use: ['style-loader', 'css-loader', 'sass-loader'],
+    include: path.resolve(__dirname, '../src'),
+  });
+
   config.resolve.modules.push(path.resolve(__dirname, '../src'));
   config.resolve.extensions.push(".ts", ".tsx", ".js", ".jsx");
   return config;
