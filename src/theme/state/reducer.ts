@@ -2,7 +2,7 @@ import { themeInitialState } from "./initial-state";
 import { ThemeEnum } from "enums/ThemeEnum";
 import { THEME_ACTIONS_TYPES, ThemeActionTypes } from "./action-creators";
 
-export const themeReducer: React.Reducer<ThemeEnum, ThemeActionTypes> = (
+const themeReducer: React.Reducer<ThemeEnum, ThemeActionTypes> = (
   theme = themeInitialState,
   action
 ) => {
@@ -15,3 +15,5 @@ export const themeReducer: React.Reducer<ThemeEnum, ThemeActionTypes> = (
       return theme;
   }
 };
+
+export { themeReducer };

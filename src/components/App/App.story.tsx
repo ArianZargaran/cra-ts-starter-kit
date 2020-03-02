@@ -1,25 +1,14 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { App } from "components/App/App";
-import { ThemeProvider } from "theme/state/provider";
-import { text } from "@storybook/addon-knobs";
+import { MockStore } from "lib/MockStore";
+import { storiesCreator } from "lib/storiesCreator";
 
-const AppComponent = ({ copy }: { copy: string }) => {
+const AppComponent = () => {
   return (
-    <ThemeProvider>
-      <App copy={copy} />
-    </ThemeProvider>
+    <MockStore>
+      <App />
+    </MockStore>
   );
 };
 
-storiesOf("App/Master", module)
-  .add("On Light Mode", () => (
-    <div className="light-mode-root">
-      {AppComponent({ copy: text("copy", "abcde") })}
-    </div>
-  ))
-  .add("On Dark Mode", () => (
-    <div className="dark-mode-root">
-      {AppComponent({ copy: text("copy", "12345") })}
-    </div>
-  ));
+storiesCreator({ path: "App/Master", component: <AppComponent /> });

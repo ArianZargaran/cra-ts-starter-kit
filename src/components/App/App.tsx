@@ -2,11 +2,11 @@ import React from "react";
 
 import "./app.css";
 
-const App = ({ copy = "" }: { copy: string }) => {
+const App = () => {
   return (
     <div className="wtf-app">
       <header className="wtf-header">
-        <p>{copy}</p>
+        <p>Hello World!</p>
       </header>
     </div>
   );

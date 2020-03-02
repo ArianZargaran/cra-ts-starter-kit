@@ -1,27 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Theme } from "theme/component/Theme";
 import { App } from "components/App/App";
 import * as serviceWorker from "serviceWorker";
-import { Provider as GlobalStateProvider } from "react-redux";
 import { store } from "state/store";
 
 import "styles/reset.css";
 import "styles/index.css";
 
 import { bootstrapActions } from "state/bootstrapActions";
-import { ThemeProvider } from "theme/state/provider";
+import { Providers } from "lib/Providers";
 
 bootstrapActions(store);
 
 ReactDOM.render(
-  <GlobalStateProvider store={store}>
-    <ThemeProvider>
-      <Theme>
-        <App copy="hello" />
-      </Theme>
-    </ThemeProvider>
-  </GlobalStateProvider>,
+  <Providers store={store}>
+    <App />
+  </Providers>,
   document.getElementById("root")
 );
 

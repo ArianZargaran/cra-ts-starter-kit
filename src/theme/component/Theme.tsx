@@ -3,8 +3,8 @@ import classnames from "classnames";
 import { ThemeContext } from "theme/state/context";
 import { ThemeEnum } from "enums/ThemeEnum";
 import { toggleTheme, setDarkTheme } from "theme/state/action-creators";
-import { themeToSwitchTo } from "utils/themeToSwitchTo";
-import { isDarkMode } from "utils/isDarkMode";
+import { themeToSwitchTo } from "theme/utils/themeToSwitchTo";
+import { isDarkMode } from "theme/utils/isDarkMode";
 
 import dark from "styles/theme/dark/root.module.css";
 import light from "styles/theme/light/root.module.css";
@@ -14,7 +14,7 @@ interface ThemePropTypes {
   children: ReactNode;
 }
 
-export const Theme = ({ children }: ThemePropTypes) => {
+const Theme = ({ children }: ThemePropTypes) => {
   const { theme, dispatch } = useContext(ThemeContext);
 
   useEffect(() => {
@@ -43,3 +43,5 @@ export const Theme = ({ children }: ThemePropTypes) => {
     </div>
   );
 };
+
+export { Theme };
