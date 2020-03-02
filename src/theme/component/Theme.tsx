@@ -30,8 +30,8 @@ export const Theme = ({ children }: ThemePropTypes) => {
   return (
     <div
       className={classnames({
-        [light.root]: theme === ThemeEnum.light,
-        [dark.root]: theme === ThemeEnum.dark
+        [light.root]: theme === ThemeEnum.LIGHT,
+        [dark.root]: theme === ThemeEnum.DARK
       })}
     >
       <div className="wtf-theme_switch-wrapper">

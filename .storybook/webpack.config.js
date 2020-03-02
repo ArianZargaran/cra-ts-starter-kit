@@ -7,14 +7,20 @@ module.exports = ({ config }) => {
     include: [SRC_PATH],
     use: [
       {
-        loader: require.resolve("awesome-typescript-loader"),
+        loader: require.resolve("babel-loader"),
         options: {
-          configFileName: "./.storybook/tsconfig.json"
+          presets: [
+            require.resolve("@babel/preset-typescript"),
+            [
+              require.resolve("babel-preset-react-app/dependencies"),
+              { helpers: true }
+            ]
+          ],
         }
       },
-      { loader: require.resolve("react-docgen-typescript-loader") }
     ]
   });
-  config.resolve.extensions.push(".ts", ".tsx");
+  config.resolve.modules.push(path.resolve(__dirname, '../src'));
+  config.resolve.extensions.push(".ts", ".tsx", ".js", ".jsx");
   return config;
 };
