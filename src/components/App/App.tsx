@@ -2,11 +2,15 @@ import React from "react";
 
 import "./app.css";
 
-const App = () => {
+interface AppPropTypes {
+  children?: string;
+}
+
+const App = ({ children = "Hello world!" }: AppPropTypes) => {
   return (
     <div className="wtf-app">
       <header className="wtf-header">
-        <p>Hello World!</p>
+        <p>{children}</p>
       </header>
     </div>
   );
