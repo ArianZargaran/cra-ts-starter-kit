@@ -6,6 +6,6 @@ describe("App", () => {
   const component = shallow(<App />);
 
   it("should render Theme wrapper", () => {
-    expect(component.find("Theme").length).toBe(1);
+    expect(component.find(".wtf-app").length).toBe(1);
   });
 });

@@ -1,6 +1,9 @@
 import { configure, addDecorator, addParameters } from "@storybook/react";
 import { withKnobs } from "@storybook/addon-knobs";
-import theme from "./theme";
+import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks";
+
+import { theme } from "./theme";
+import { viewports } from "./viewports";
 
 import "../src/styles/reset.css";
 import "../src/styles/index.css";
@@ -10,7 +13,14 @@ import "./styles/dark-mode-root.css";
 
 function loadStories() {
   addDecorator(withKnobs);
-  addParameters({ options: { theme } });
+  addParameters({
+    options: { theme },
+    viewports,
+    docs: {
+      container: DocsContainer,
+      page: DocsPage
+    }
+  });
 
   const requireContext = require.context(
     "../src/components",
@@ -18,7 +28,7 @@ function loadStories() {
     /.story.tsx$/
   );
 
-  requireContext.keys().forEach((filename) => {
+  requireContext.keys().forEach(filename => {
     requireContext(filename);
   });
 }

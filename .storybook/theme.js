@@ -1,7 +1,7 @@
 import { create } from "@storybook/theming/create";
 import { isDarkMode } from "../src/theme/utils/isDarkMode";
 
-export default create({
+export const theme = create({
   base: isDarkMode() ? "dark" : "light",
   brandTitle: "wtf Storybook",
   brandUrl: "wtf-repo-url",
