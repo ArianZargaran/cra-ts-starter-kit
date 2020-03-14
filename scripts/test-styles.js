@@ -1,58 +1,46 @@
-const { exec } = require("child_process");
+const execSync = require("child_process").execSync;
+const exec = require("child_process").exec;
 
 const openReporter = () => {
-  exec("open ./report.html", (error, stdout, stderr) => {
-    if (error) {
-      console.log(
-        `There was an error trying to find the file report.html: ${error.message}`
-      );
-      return;
-    }
-    if (stderr) {
-      console.log(
-        `There was an error trying to open the report html: ${stderr}`
-      );
-      return;
-    }
-    console.log(`Opening the report!!`, stdout);
-  });
+  try {
+    execSync("open ./.loki/report.html", { stdio: "ignore" });
+    console.log("Opening the reporter!");
+  } catch (e) {
+    throw e;
+  }
 };
 
-const executeDiff = (resolve, reject) => {
-  exec("cp -r difference/ reg-diff", (error, stdout, stderr) => {
-    if (error) {
-      console.log(
-        `There was an error trying to find the diffs: ${error.message}`
-      );
-      return;
-    }
-    if (stderr) {
-      console.log(
-        `There was an error running the Visual Regression Tests: ${stderr}`
-      );
-      return;
-    }
-    console.log("Give me just one more sec...", stdout);
+const diffingWithLoki = () => {
+  try {
+    execSync("cp -r ./.loki/difference/ ./.loki/reg-diff");
+  } catch (e) {
     openReporter();
+    throw e;
+  }
+  openReporter();
+};
+
+const runInterface = () => {
+  try {
+    execSync(
+      "reg-cli ./.loki/current/ ./.loki/reference/ ./.loki/reg-diff/ -R ./.loki/report.html"
+    );
+    diffingWithLoki();
+  } catch (e) {
+    diffingWithLoki();
+    throw e;
+  }
+};
+
+const runLokiTests = () => {
+  exec("yarn loki test", error => {
+    if (error) {
+      console.log(`Your tests didn't pass`);
+    } else {
+      console.log("Your tests PASSED");
+    }
+    runInterface();
   });
 };
 
-const runReporter = () =>
-  exec(
-    "reg-cli ./current/ ./reference/ ./reg-diff/ -R ./report.html",
-    (error, stdout, stderr) => {
-      if (error) {
-        console.log("Looks liye something changed on your Layout");
-        openReporter();
-        return;
-      }
-      executeDiff();
-      console.log(`Output`, stdout);
-    }
-  );
-
-exec("yarn loki test", (error, stdout, stderr) => {
-  console.log("Let me run loki first");
-  process.chdir(".loki");
-  runReporter();
-});
+runLokiTests();

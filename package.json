@@ -73,7 +73,7 @@
     "test:styles": "node scripts/test-styles.js",
     "test:styles:update": "yarn loki approve",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "storybook:build": "build-storybook -c .storybook/config -s .storybook/static-link -o .storybook/static-link"
+    "storybook:build": "build-storybook -c .storybook -s .storybook/static-link -o .storybook/static-link"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -185,6 +185,8 @@
         "deviceScaleFactor": 1,
         "mobile": false
       }
-    }
+    },
+    "verboseRenderer": true,
+    "chromeTolerance": 0.01
   }
 }
