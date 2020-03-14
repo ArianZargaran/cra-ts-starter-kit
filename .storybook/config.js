@@ -1,4 +1,5 @@
 import { configure, addDecorator, addParameters } from "@storybook/react";
+import 'loki/configure-react';
 import { withKnobs } from "@storybook/addon-knobs";
 import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks";
 

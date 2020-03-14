@@ -70,7 +70,10 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "test:styles": "node scripts/test-styles.js",
+    "test:styles:update": "yarn loki approve",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook:build": "build-storybook -c .storybook/config -s .storybook/static-link -o .storybook/static-link"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -156,6 +159,32 @@
     "@types/redux-mock-store": "^1.0.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "loki": "^0.20.1",
     "redux-mock-store": "^1.5.4"
+  },
+  "loki": {
+    "configurations": {
+      "chrome.small": {
+        "target": "chrome.docker",
+        "width": 320,
+        "height": 240,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      },
+      "chrome.medium": {
+        "target": "chrome.docker",
+        "width": 800,
+        "height": 600,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      },
+      "chrome.large": {
+        "target": "chrome.docker",
+        "width": 1280,
+        "height": 1024,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      }
+    }
   }
 }

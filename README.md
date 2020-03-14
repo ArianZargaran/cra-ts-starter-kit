@@ -1,6 +1,6 @@
 # CRA TS Starter Kit
 
-_Stack: React, Redux, Firebase TypeScript, EsLint, Prettier, Jest, Enzyme_
+_Stack: React, Redux, Firebase TypeScript, Storybook, EsLint, Prettier, Jest, Enzyme_
 
 ## How to use:
 
@@ -26,7 +26,32 @@ $ yarn start
 
 <u>Deployed App Version</u>
 
-Visit ``.
+Visit `wtf.com`.
+
+## About this Documentation
+
+Three level documentation:
+
+- `In-code Level Documentation`. Series of comments all along the codebase. The goal of `In-code Documentation` is to register:
+
+  - What a function do
+  - What the function's parameters or arguments are
+  - What a function returns
+
+  > **NOTE**: It's useless to document absolutely everything around the code. But we all know when you are making those kind of easy-to-forget/hard-to-understand decisions. So, these are the ones that MUST to be documented.
+
+- `Components Level Documentation`. Component documentation handled with Storybook Documentation. Component-Driven Development is the way to build UIs from the bottom up starting with components and ending at screens. The good thing is with Storybook we can auto-generate a maintainable solid documentation. Here's what we are covering:
+
+  - Design System decisions
+  - Component's usage
+  - Each component's description, primary story sample (with copyable source), props table, and collection of stories.
+    > Visit `wtf.com` for life Design System Docs.
+
+- `Project's Level Documentation`. Includes this same README file, which contains:
+  - A brief description of the project
+  - Installation instructions
+  - Record all major decisions made
+  - Conventions applied if that's the case: naming, file organization, coding practices, etc.
 
 ## File Structure
 
