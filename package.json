@@ -74,7 +74,7 @@
     "test:styles:update": "yarn loki approve",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "storybook:build": "build-storybook -c .storybook -s .storybook/static-link -o .storybook/static-link",
-    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "eslintConfig": {
     "extends": "react-app"

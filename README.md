@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/ArianZargaran/cra-ts-starter-kit.svg?branch=master)](https://travis-ci.org/ArianZargaran/cra-ts-starter-kit)
+[![Coverage Status](https://coveralls.io/repos/github/ArianZargaran/cra-ts-starter-kit/badge.svg?branch=master)](https://coveralls.io/github/ArianZargaran/cra-ts-starter-kit?branch=master)
+
 # CRA TS Starter Kit
 
 _Stack: React, Redux, Firebase TypeScript, Storybook, EsLint, Prettier, Jest, Enzyme_

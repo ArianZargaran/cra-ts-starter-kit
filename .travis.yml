@@ -1,11 +1,17 @@
-sudo: false
 language: node_js
 node_js:
-  - "10"
+  - "stable"
+root:
+  dist:
+    - xenial
+  os:
+    - linux
 branches:
   only:
     - master
 cache:
+  timeout:
+    - "5"
   directories:
     - node_modules
 install:
