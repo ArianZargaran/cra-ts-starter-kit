@@ -33,9 +33,9 @@ const runInterface = () => {
 };
 
 const runLokiTests = () => {
-  exec("yarn loki test", error => {
+  exec("yarn loki test --reactUri	file:./.storybook/static-link", error => {
     if (error) {
-      console.log(`Your tests didn't pass`);
+      console.log(`Your tests DID NOT pass`);
     } else {
       console.log("Your tests PASSED");
     }
