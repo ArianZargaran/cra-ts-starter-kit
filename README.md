@@ -90,7 +90,7 @@ Three level documentation:
 
 **Unit Tests:** _Jest & Enzyme_
 
-**Coverage:** _Coverall_
+**Coverage:** _Coveralls_
 
 **Functional Tests:** _Cypress & Cucumber_
 
