@@ -28,3 +28,7 @@ reg.json
 
 # Coveralls
 .coveralls.yml
+
+# testing
+cypress/videos/*
+cypress/screenshots/*

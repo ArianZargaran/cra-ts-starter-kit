@@ -95,7 +95,34 @@ Three level documentation:
 
 **Coverage:** _Coveralls_
 
+> NOTE: Do you want to run your brand new Coveralls script? Follow the steps
+
+- Add a `.coveralls.yml` file at the root level of the repository.
+
+- Paste the following code snippet:
+
+```.coveralls.yml
+
+repo_token: YOUR_COVERALLS_REPO_TOKEN
+
+```
+
+- Replace `YOUR_COVERALLS_REPO_TOKEN` with your corresponding one.
+
+- Check the script works by runing: `$ yarn run coverage`
+
 **Functional Tests:** _Cypress & Cucumber_
+
+```
+Feature: A short description of the desired functionality
+  Scenario: A business situation
+    Given a precondition
+    And another precondition
+    When an event happens
+    And another event happens too
+    Then a testable outcome is achieved
+    And something else is also completed
+```
 
 **Visual Tests:** _Storybook & Loki_
 

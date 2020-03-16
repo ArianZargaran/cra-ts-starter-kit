@@ -1,5 +1,6 @@
 // TODO: Remove Knobs or actions
 // TODO: Remember to check Viewports
+// TODO: Implement Slots in page
 import React from "react";
 import { App } from "components/App/App";
 import { MockStore } from "lib/MockStore";
