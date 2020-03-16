@@ -10,12 +10,13 @@ branches:
   only:
     - master
 cache:
+  npm: true
   timeout:
     - "5"
   directories:
-    - node_modules
+    - ~/.cache/Cypress
 install:
-  - yarn
+  - yarn install --frozen-lockfile
 script:
   - yarn test
   - yarn coverage
