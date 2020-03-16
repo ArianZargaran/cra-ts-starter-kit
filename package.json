@@ -78,7 +78,7 @@
     "e2e:open": "cypress open",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "storybook:build": "build-storybook -c .storybook -s .storybook/static-link -o .storybook/static-link",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "eslintConfig": {
     "extends": [
