@@ -72,12 +72,35 @@
     "test": "node scripts/test.js",
     "test:styles": "yarpm storybook:build && (node scripts/test-styles.js || open .loki/report.html)",
     "test:styles:update": "yarn loki approve",
+    "test:e2e": "PORT=8080 BROWSER=none start-server-and-test start http://localhost:8080 e2e:run",
+    "test:e2e:open": "PORT=8080 BROWSER=none start-server-and-test start http://localhost:8080 e2e:open",
+    "e2e:run": "cypress run",
+    "e2e:open": "cypress open",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "storybook:build": "build-storybook -c .storybook -s .storybook/static-link -o .storybook/static-link",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "plugin:cypress/recommended"
+    ],
+    "plugins": [
+      "cypress"
+    ],
+    "env": {
+      "cypress/globals": true
+    },
+    "rules": {
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": [
+            "cypress/**/*"
+          ]
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -159,11 +182,15 @@
     "@types/react-redux": "^7.1.7",
     "@types/redux-mock-store": "^1.0.2",
     "coveralls": "^3.0.9",
+    "cypress": "^4.1.0",
+    "cypress-cucumber-preprocessor": "^2.0.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "eslint-plugin-cypress": "^2.10.3",
     "loki": "^0.20.1",
     "redux-mock-store": "^1.5.4",
     "reg-cli": "^0.16.0",
+    "start-server-and-test": "^1.10.10",
     "yarpm": "^0.2.1"
   },
   "loki": {
@@ -192,5 +219,8 @@
     },
     "verboseRenderer": true,
     "chromeTolerance": 0.01
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
