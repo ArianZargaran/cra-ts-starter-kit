@@ -14,10 +14,14 @@ cache:
   timeout:
     - "5"
   directories:
-    - ~/.cache/Cypress
+    # cache both npm modules and Cypress binary
+    - ~/.npm
+    - ~/.cache
 install:
   - yarn install --frozen-lockfile
 script:
+  ## print all Travis environment variables for debugging
+  # TODO: We can paralellize our tests in different stages
   - yarn test
   - yarn coverage
   - yarn test:e2e
