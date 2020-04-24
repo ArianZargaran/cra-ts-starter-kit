@@ -7645,13 +7645,13 @@ eslint-import-resolver-node@^0.3.2:
     debug "^2.6.9"
     resolve "^1.13.1"
 
-eslint-loader@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-loader/-/eslint-loader-4.0.1.tgz#669b38d0c2c0527da62987706ddcabdf7b40c1d7"
-  integrity sha512-9Pm2bogkTm8vdFYqBXAWWhWTgmrzLotNlOn81JsihiCqE+5NHhJqHBqJVQUvvO3Ti6ydPVzmX4nYVQZI3jPuEQ==
+eslint-loader@4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-loader/-/eslint-loader-4.0.2.tgz#386a1e21bcb613b3cf2d252a3b708023ccfb41ec"
+  integrity sha512-EDpXor6lsjtTzZpLUn7KmXs02+nIjGcgees9BYjNkWra3jVq5vVa8IoCKgzT2M7dNNeoMBtaSG83Bd40N3poLw==
   dependencies:
     find-cache-dir "^3.3.1"
-    fs-extra "^9.0.0"
+    fs-extra "^8.1.0"
     loader-utils "^2.0.0"
     object-hash "^2.0.3"
     schema-utils "^2.6.5"
