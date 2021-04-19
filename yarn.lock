@@ -21801,10 +21801,10 @@ yargs@^16.1.0:
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
 
-yarpm@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/yarpm/-/yarpm-1.0.1.tgz#9166be48c9d9ec129337f8d8991ad94a79d4b795"
-  integrity sha512-X4Ci3hi10VSLI0yyjwjtldCxSuv9t/O9M9PpfiD7nTHPZzwQ1SWPY1BqOc79QFbwBJU4qBgwV7+RmKISrkwdKA==
+yarpm@^1.0.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/yarpm/-/yarpm-1.1.1.tgz#23e25e512b409d941524a9674718f1871e5fb52a"
+  integrity sha512-A3gVdtyld+gYcVmKScvJqS2oT/i9xdsb/SqDsY9c0+BeYdYBUJrRfr4pD7UP+5uXEneJ0BL0rC/6rd1fnlYEcg==
   dependencies:
     command-exists "^1.2.9"
     cross-spawn "^7.0.3"
