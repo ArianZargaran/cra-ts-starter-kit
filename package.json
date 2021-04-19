@@ -172,7 +172,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-typescript": "^7.8.3",
+    "@babel/preset-typescript": "^7.13.0",
     "@storybook/addon-docs": "^6.0.0",
     "@storybook/addon-knobs": "^6.0.0",
     "@storybook/addon-viewport": "^6.0.0",
