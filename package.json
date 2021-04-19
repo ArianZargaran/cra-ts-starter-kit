@@ -186,7 +186,7 @@
     "cypress-cucumber-preprocessor": "^4.0.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
-    "eslint-plugin-cypress": "^2.10.3",
+    "eslint-plugin-cypress": "^2.11.2",
     "loki": "^0.28.0",
     "redux-mock-store": "^1.5.4",
     "reg-cli": "^0.17.0",
