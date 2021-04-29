@@ -16380,12 +16380,10 @@ postcss-attribute-case-insensitive@^4.0.1:
     postcss "^7.0.2"
     postcss-selector-parser "^6.0.2"
 
-postcss-browser-comments@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-browser-comments/-/postcss-browser-comments-3.0.0.tgz#1248d2d935fb72053c8e1f61a84a57292d9f65e9"
-  integrity sha512-qfVjLfq7HFd2e0HW4s1dvU8X080OZdG46fFbIBFjW7US7YPDcWfRvdElvwMJr2LI6hMmD+7LnH2HcmXTs+uOig==
-  dependencies:
-    postcss "^7"
+postcss-browser-comments@^4:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-browser-comments/-/postcss-browser-comments-4.0.0.tgz#bcfc86134df5807f5d3c0eefa191d42136b5e72a"
+  integrity sha512-X9X9/WN3KIvY9+hNERUqX9gncsgBA25XaeR+jshHz2j8+sYyHktHw1JdKuMjeLpGktXidqDhA7b/qm1mrBDmgg==
 
 postcss-calc@^7.0.1:
   version "7.0.1"
@@ -16850,14 +16848,13 @@ postcss-normalize-whitespace@^4.0.2:
     postcss "^7.0.0"
     postcss-value-parser "^3.0.0"
 
-postcss-normalize@9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-normalize/-/postcss-normalize-9.0.0.tgz#3b551279f78ec3b2e151bc8cf52ff6e46c4cc60c"
-  integrity sha512-//kq5O1xkygzN1iCioFIBtzyVTgB6ce9+Hu0mNHuUhPn+FnnFSPybe5kBemnUPPqd7QrHc+kdX6GVECUWdU2uQ==
+postcss-normalize@10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-normalize/-/postcss-normalize-10.0.0.tgz#6ad4c55067b16447969a8ab208c9f9f39d859aa7"
+  integrity sha512-krYZhIfZ6TIbMSXI4JpIWU64CPHCzXNbyCgHAJdZXirBpgTLRoB4+bSA17zvMLlst6SrdL9yfyTdGQlxS5poeg==
   dependencies:
     "@csstools/normalize.css" "*"
-    postcss "^7.0.27"
-    postcss-browser-comments "^3.0.0"
+    postcss-browser-comments "^4"
     sanitize.css "*"
 
 postcss-ordered-values@^4.1.2:
@@ -17081,19 +17078,10 @@ postcss@7.0.21:
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
-postcss@^7, postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.16, postcss@^7.0.17, postcss@^7.0.2, postcss@^7.0.26, postcss@^7.0.5, postcss@^7.0.6:
+postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.16, postcss@^7.0.17, postcss@^7.0.2, postcss@^7.0.26, postcss@^7.0.5, postcss@^7.0.6:
   version "7.0.26"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.26.tgz#5ed615cfcab35ba9bbb82414a4fa88ea10429587"
   integrity sha512-IY4oRjpXWYshuTDFxMVkJDtWIk2LhsTlu8bZnbEJA4+bYT16Lvpo8Qv6EvDumhYRgzjZl489pmsY3qVgJQ08nA==
-  dependencies:
-    chalk "^2.4.2"
-    source-map "^0.6.1"
-    supports-color "^6.1.0"
-
-postcss@^7.0.27:
-  version "7.0.27"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.27.tgz#cc67cdc6b0daa375105b7c424a85567345fc54d9"
-  integrity sha512-WuQETPMcW9Uf1/22HWUWP9lgsIC+KEHg2kozMflKjbeUtw9ujvFX6QmIfozaErDkmLWS9WEnEdEe6Uo9/BNTdQ==
   dependencies:
     chalk "^2.4.2"
     source-map "^0.6.1"
