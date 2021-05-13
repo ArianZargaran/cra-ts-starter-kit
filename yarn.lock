@@ -18704,10 +18704,10 @@ sanitize.css@*:
   resolved "https://registry.yarnpkg.com/sanitize.css/-/sanitize.css-11.0.0.tgz#29bb394c0543616f31cd8c58fcba8323a60e2ef6"
   integrity sha512-Ox0X2lk0kOGeODJgT9S9HFv0j5Cz89ir9ILylj62/vejHPdMmahmetfocoQwyiAnseeXyDa+KIbO6ZQJe5n2Lg==
 
-sass-loader@11.1.0:
-  version "11.1.0"
-  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-11.1.0.tgz#302a83e41834a7ac0cc9d7591e52688ef4ed92af"
-  integrity sha512-TS8KtLtMAqK68lBs0PRzoGf7ndz9m7pKo4BXvUzjGDDgWEY0qcoMMRVpaHfYM0i3/E6UsererqIpjs7dVA/p7A==
+sass-loader@11.1.1:
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-11.1.1.tgz#0db441bbbe197b2af96125bebb7f4be6476b13a7"
+  integrity sha512-fOCp/zLmj1V1WHDZbUbPgrZhA7HKXHEqkslzB+05U5K9SbSbcmH91C7QLW31AsXikxUMaxXRhhcqWZAxUMLDyA==
   dependencies:
     klona "^2.0.4"
     neo-async "^2.6.2"
