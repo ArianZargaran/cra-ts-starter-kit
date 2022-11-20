@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.14.6",
-    "@svgr/webpack": "5.5.0",
+    "@svgr/webpack": "6.5.1",
     "@types/jest": "^26.0.0",
     "@types/node": "^15.0.0",
     "@types/react": "^17.0.0",
